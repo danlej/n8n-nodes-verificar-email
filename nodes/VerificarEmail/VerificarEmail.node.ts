@@ -47,15 +47,8 @@ export class VerificarEmail implements INodeType {
 
         for (let i = 0; i < items.length; i++) {
             const email = this.getNodeParameter('email', i) as string;
-            if (!email) {
-                throw new Error('Email address is required');
-            }
-
             const credentials = await this.getCredentials('verificarEmailApi');
             const apiKey = credentials?.apiKey as string;
-            if (!apiKey) {
-                throw new Error('API Key is required');
-            }
 
             const response = await this.helpers.httpRequest({
                 method: 'GET',
