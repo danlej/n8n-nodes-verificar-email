@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-verificaremail",
+  "name": "@mrdanlej/n8n-nodes-verificaremail",
   "version": "0.1.0",
   "description": "n8n node to verify email addresses using the Emailable API",
   "keywords": [
